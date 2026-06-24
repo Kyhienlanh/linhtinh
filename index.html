@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bảng ghép âm tiếng Việt (có thanh điệu)</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="page-header">
+  <h1>Bảng ghép âm tiếng Việt <span class="subtitle-inline">(có thanh điệu)</span></h1>
+  <p class="subtitle">Bấm vào ô bất kỳ để nghe phát âm</p>
+
+  <div class="toolbar">
+    <button id="tab-table" class="tab active" type="button">
+      <span class="tab-icon">▦</span> Bảng ghép âm
+    </button>
+    <button id="tab-guide" class="tab" type="button">
+      <span class="tab-icon">ⓘ</span> Hướng dẫn
+    </button>
+
+    <div class="tone-legend-inline" id="tone-legend-inline"></div>
+  </div>
+</header>
+
+<main>
+  <div id="table-wrap">
+    <div id="table"></div>
+  </div>
+
+  <section class="bottom-panels">
+    <div class="panel">
+      <h2><span class="panel-icon">🔗</span> Hướng dẫn sử dụng</h2>
+      <ul>
+        <li>Chọn một âm đầu ở cột dọc bên trái (ví dụ: <strong>b</strong>)</li>
+        <li>Chọn một vần ở hàng ngang phía trên (ví dụ: <strong>ai</strong>)</li>
+        <li>Bấm vào ô giao nhau để nghe phát âm (b + ai = <strong>bai</strong>)</li>
+        <li>Mỗi ô có 6 thanh điệu. Bấm vào icon loa để nghe từng thanh.</li>
+      </ul>
+    </div>
+
+    <div class="panel">
+      <h2>6 thanh điệu tiếng Việt</h2>
+      <div class="tone-cards" id="tone-cards"></div>
+    </div>
+  </section>
+
+  <p class="tip">💡 Mẹo: di chuột lên ô để xem thanh điệu. Bấm để nghe tất cả các thanh.</p>
+</main>
+
+<script src="https://js.puter.com/v2/"></script>
+<script src="script.js"></script>
+</body>
+</html>
